@@ -22,7 +22,7 @@ class DemoPhotoSeeder extends Seeder
             return;
         }
 
-        $owner = User::query()->where('email', 'owner@ngekost.test')->first();
+        $owner = User::query()->where('email', 'owner@kostHUNT.test')->first();
 
         if ($owner === null) {
             return;

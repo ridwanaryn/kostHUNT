@@ -34,7 +34,7 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex items-center justify-between h-20">
                     <a href="{{ route('home') }}" class="shrink-0">
-                        <span class="inline-block bg-yellow border-[3px] border-black rounded-xl px-3 py-1.5 font-display text-lg font-black uppercase shadow-[3px_3px_0px_#000]">NgeKost!</span>
+                        <span class="inline-block bg-yellow border-[3px] border-black rounded-xl px-3 py-1.5 font-display text-lg font-black uppercase shadow-[3px_3px_0px_#000]">kostHUNT!</span>
                     </a>
 
                     <nav class="hidden md:flex items-center gap-7 text-sm font-bold uppercase">
@@ -111,7 +111,7 @@
 
                 <div class="mt-10 grid gap-8 md:grid-cols-4">
                     <div>
-                        <span class="inline-block bg-yellow border-[3px] border-black rounded-xl px-3 py-1.5 font-display text-lg font-black uppercase shadow-[3px_3px_0px_#000]">NgeKost!</span>
+                        <span class="inline-block bg-yellow border-[3px] border-black rounded-xl px-3 py-1.5 font-display text-lg font-black uppercase shadow-[3px_3px_0px_#000]">kostHUNT!</span>
                         <p class="mt-3 text-sm text-neutral-700">Find and rent your next kost without the drama.</p>
                     </div>
                     <div>
@@ -139,7 +139,7 @@
                     </div>
                 </div>
 
-                <p class="mt-10 text-xs font-bold text-neutral-600">&copy; {{ date('Y') }} NgeKost! — Built as a Laravel portfolio project.</p>
+                <p class="mt-10 text-xs font-bold text-neutral-600">&copy; {{ date('Y') }} kostHUNT! — Built as a Laravel portfolio project.</p>
             </div>
         </footer>
 

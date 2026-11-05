@@ -85,8 +85,8 @@ Open http://localhost:8000.
 
 | Role   | Email                 | Password |
 | ------ | --------------------- | -------- |
-| Owner  | owner@ngekost.test    | password |
-| Tenant | tenant@ngekost.test   | password |
+| Owner  | owner@kostHUNT.test    | password |
+| Tenant | tenant@kostHUNT.test   | password |
 
 The demo seeder creates two buildings, rooms with facilities, placeholder gallery
 photos, an active booking with a paid + unpaid invoice, an upcoming booking, a review, a

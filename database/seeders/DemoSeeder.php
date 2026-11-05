@@ -30,12 +30,12 @@ class DemoSeeder extends Seeder
     public function run(): void
     {
         $owner = User::query()->firstOrCreate(
-            ['email' => 'owner@ngekost.test'],
+            ['email' => 'owner@kostHUNT.test'],
             ['name' => 'Demo Owner', 'password' => 'password', 'role' => UserRole::Owner],
         );
 
         $tenant = User::query()->firstOrCreate(
-            ['email' => 'tenant@ngekost.test'],
+            ['email' => 'tenant@kostHUNT.test'],
             ['name' => 'Demo Tenant', 'password' => 'password', 'role' => UserRole::Tenant],
         );
 

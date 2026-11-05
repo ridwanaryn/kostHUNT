@@ -1,8 +1,8 @@
 {
     "$schema": "https://getcomposer.org/schema.json",
-    "name": "kosthunt/ngekost",
+    "name": "kosthunt/kosthunt",
     "type": "project",
-    "description": "NgeKost! — a modern boarding house search and rental platform.",
+    "description": "kostHUNT! — a modern boarding house search and rental platform.",
     "keywords": ["laravel", "kost", "rental", "neobrutalism"],
     "license": "MIT",
     "require": {

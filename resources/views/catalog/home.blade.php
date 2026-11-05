@@ -20,7 +20,7 @@
                     </a>
                     <a href="{{ route('home') }}#why"
                        class="bg-white border-[3px] border-black rounded-xl px-5 py-3 font-black uppercase shadow-[4px_4px_0px_#000] hover:-translate-x-0.5 hover:-translate-y-0.5 transition">
-                        Why NgeKost?
+                        Why kostHUNT?
                     </a>
                 </div>
             </div>
@@ -156,9 +156,9 @@
             <span class="inline-block bg-white text-onyx border-2 border-black rounded-full px-3 py-1 text-[10px] font-black uppercase">Hot promo</span>
             <h3 class="font-display text-lg font-black uppercase mt-3">Student ticket</h3>
             <p class="text-sm font-medium">Use this code for your move-in perk.</p>
-            <p class="font-display text-2xl font-black tracking-widest mt-3">NGEKOST20</p>
+            <p class="font-display text-2xl font-black tracking-widest mt-3">kostHUNT20</p>
             <button type="button"
-                    @click="navigator.clipboard.writeText('NGEKOST20'); copied = true; setTimeout(() => copied = false, 2000)"
+                    @click="navigator.clipboard.writeText('kostHUNT20'); copied = true; setTimeout(() => copied = false, 2000)"
                     class="mt-3 bg-white text-onyx border-2 border-black rounded-lg px-3 py-1.5 text-sm font-bold uppercase shadow-[2px_2px_0px_#000] hover:-translate-y-0.5 transition">
                 <span x-show="! copied">Copy code</span>
                 <span x-show="copied" x-cloak>Copied!</span>
@@ -180,7 +180,7 @@
 
     {{-- Value props --}}
     <section id="why" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16">
-        <h2 class="font-display text-2xl sm:text-3xl font-black uppercase">Why NgeKost!</h2>
+        <h2 class="font-display text-2xl sm:text-3xl font-black uppercase">Why kostHUNT!</h2>
         <div class="mt-6 grid gap-5 md:grid-cols-3">
             <div class="bg-white border-[3px] border-black rounded-2xl shadow-[4px_4px_0px_#000] p-6">
                 <div class="w-10 h-10 bg-mint border-2 border-black rounded-lg flex items-center justify-center font-black">100%</div>

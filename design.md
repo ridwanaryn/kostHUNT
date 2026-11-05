@@ -1,7 +1,7 @@
-# Design System Specification: Neo-Bento Kost (NgeKost!)
+# Design System Specification: Neo-Bento Kost (kostHUNT!)
 
 ## 1. Overview & Brand Identity
-- **Product**: **NgeKost!** — A modern boarding house (kost-kostan) search & rental platform designed for college students and young professionals (Gen-Z & Millennials).
+- **Product**: **kostHUNT!** — A modern boarding house (kost-kostan) search & rental platform designed for college students and young professionals (Gen-Z & Millennials).
 - **Aesthetic Direction**: **Neo-Brutalism paired with Bento Grid Layout**.
 - **Key Brand Attributes**: Bold, playful, transparent, hassle-free, neatly structured, and tactile.
 - **Core Visual Markers**:
@@ -40,10 +40,10 @@
 
 ---
 
-# Design System Specification: Neo-Bento Kost (NgeKost!)
+# Design System Specification: Neo-Bento Kost (kostHUNT!)
 
 ## 1. Overview & Brand Identity
-- **Product**: **NgeKost!** — Modern boarding house (kost) search & rental platform for college students and young professionals (Gen-Z & Millennials).
+- **Product**: **kostHUNT!** — Modern boarding house (kost) search & rental platform for college students and young professionals (Gen-Z & Millennials).
 - **Aesthetic Direction**: **Neo-Brutalism paired with Bento Grid Layout**.
 - **Key Brand Attributes**: Bold, playful, transparent, hassle-free, neatly structured, and tactile interaction.
 - **Core Visual Markers**:
@@ -118,7 +118,7 @@
 ### 1. Navigation & Marquee Header
 - **Top Announcement Bar**: Ticker strip in Electric Yellow (`#FFE600`) with a 3px bottom border, running promo & benefit text (`360° ONLINE SURVEY • STUDENT CASHBACK • NO DEPOSIT REQUIRED`).
 - **Main Navbar**:
-  - Logo Box: Yellow box with black border containing bold uppercase text `NGEKOST!`.
+  - Logo Box: Yellow box with black border containing bold uppercase text `kostHUNT!`.
   - Navigation Links: Bold font with hover underline / translate offset.
   - Action Button: Chunky button in Pink/Yellow with hard shadow `shadow-[3px_3px_0px_#000]`.
 
@@ -144,7 +144,7 @@
 - **Facility Spotlight Card (2x1)**:
   - Lilac / Pastel Pink background, grid of 4 essential student room amenities with retro icons.
 - **Promo Ticket Card (1x1)**:
-  - Coral background (`#FF6B4A`), torn-ticket design featuring voucher code `NGEKOST20` and a *Copy Code* button.
+  - Coral background (`#FF6B4A`), torn-ticket design featuring voucher code `kostHUNT20` and a *Copy Code* button.
 
 ### 4. Interactive Map Widget
 - Interactive map box with room distribution pins shaped like price pills (`IDR 1.8M`, `IDR 2.45M`, `IDR 3.0M`).
