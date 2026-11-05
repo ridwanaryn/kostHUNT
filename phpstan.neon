@@ -1,0 +1,14 @@
+includes:
+    - vendor/larastan/larastan/extension.neon
+    - phpstan-baseline.neon
+
+parameters:
+    level: 5
+    paths:
+        - app/
+        - database/
+        - tests/
+    tmpDir: .phpstan-cache
+    parallel:
+        maximumNumberOfProcesses: 2
+    reportUnmatchedIgnoredErrors: true
