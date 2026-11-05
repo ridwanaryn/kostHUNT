@@ -63,3 +63,21 @@ Defined in `PRD.md` §6.2 (folder structure), §7 (data model), §9 (routes), §
 ## Environment notes
 
 PHP, Composer, and MySQL must be installed (Homebrew) before scaffolding. Node/npm already present.
+
+## Progress
+
+| Milestone | Status |
+| --- | --- |
+| M0 Setup | Done |
+| M1 Accounts | Done |
+| M2 Listings | Done |
+| M3 Discovery | Done |
+| M4 Booking | Done |
+| M5 Billing | Done |
+| M6 Rental changes | Done |
+| M7 Engagement | Done |
+| M8 Chat | Done |
+| M9 Maintenance | Done |
+| M10 Insight | Done |
+| M11 Hardening | Done |
+

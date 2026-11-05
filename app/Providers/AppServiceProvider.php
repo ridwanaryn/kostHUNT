@@ -4,7 +4,10 @@ declare(strict_types=1);
 
 namespace App\Providers;
 
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\View\View as ViewContract;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -21,6 +24,15 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        Model::preventLazyLoading(app()->environment('local'));
+
+        View::composer('layouts.navigation', function (ViewContract $view): void {
+            $user = auth()->user();
+
+            $view->with(
+                'unreadNotificationsCount',
+                $user?->unreadNotifications()->count() ?? 0,
+            );
+        });
     }
 }

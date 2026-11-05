@@ -15,7 +15,52 @@
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link>
+                    <x-nav-link :href="route('chat.index')" :active="request()->routeIs('chat.*')">
+                        {{ __('Messages') }}
+                    </x-nav-link>
+                    @if (auth()->user()?->isTenant())
+                        <x-nav-link :href="route('tenant.bookings.index')" :active="request()->routeIs('tenant.bookings.*')">
+                            {{ __('My Bookings') }}
+                        </x-nav-link>
+                        <x-nav-link :href="route('tenant.invoices.index')" :active="request()->routeIs('tenant.invoices.*')">
+                            {{ __('Invoices') }}
+                        </x-nav-link>
+                        <x-nav-link :href="route('tenant.favorites.index')" :active="request()->routeIs('tenant.favorites.*')">
+                            {{ __('Favorites') }}
+                        </x-nav-link>
+                        <x-nav-link :href="route('tenant.maintenance-requests.index')" :active="request()->routeIs('tenant.maintenance-requests.*')">
+                            {{ __('Requests') }}
+                        </x-nav-link>
+                    @endif
+                    @if (auth()->user()?->isOwner())
+                        <x-nav-link :href="route('owner.buildings.index')" :active="request()->routeIs('owner.buildings.*') || request()->routeIs('owner.rooms.*')">
+                            {{ __('My Buildings') }}
+                        </x-nav-link>
+                        <x-nav-link :href="route('owner.bookings.index')" :active="request()->routeIs('owner.bookings.*')">
+                            {{ __('Bookings') }}
+                        </x-nav-link>
+                        <x-nav-link :href="route('owner.invoices.index')" :active="request()->routeIs('owner.invoices.*')">
+                            {{ __('Invoices') }}
+                        </x-nav-link>
+                        <x-nav-link :href="route('owner.maintenance-requests.index')" :active="request()->routeIs('owner.maintenance-requests.*')">
+                            {{ __('Maintenance') }}
+                        </x-nav-link>
+                    @endif
                 </div>
+            </div>
+
+            <!-- Notifications Bell -->
+            <div class="hidden sm:flex sm:items-center">
+                <a href="{{ route('notifications.index') }}" class="relative inline-flex items-center justify-center p-2 text-gray-500 hover:text-gray-700" aria-label="Notifications">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.4-1.4A2 2 0 0118 14.2V11a6 6 0 10-12 0v3.2c0 .5-.2 1-.6 1.4L4 17h5m6 0a3 3 0 11-6 0" />
+                    </svg>
+                    @if (($unreadNotificationsCount ?? 0) > 0)
+                        <span class="absolute top-0 right-0 bg-coral text-white border border-black rounded-full text-[10px] font-black px-1 leading-4">
+                            {{ $unreadNotificationsCount }}
+                        </span>
+                    @endif
+                </a>
             </div>
 
             <!-- Settings Dropdown -->
@@ -70,6 +115,40 @@
             <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
             </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('chat.index')" :active="request()->routeIs('chat.*')">
+                {{ __('Messages') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('notifications.index')" :active="request()->routeIs('notifications.*')">
+                {{ __('Notifications') }} @if (($unreadNotificationsCount ?? 0) > 0) ({{ $unreadNotificationsCount }}) @endif
+            </x-responsive-nav-link>
+            @if (auth()->user()?->isTenant())
+                <x-responsive-nav-link :href="route('tenant.bookings.index')" :active="request()->routeIs('tenant.bookings.*')">
+                    {{ __('My Bookings') }}
+                </x-responsive-nav-link>
+                <x-responsive-nav-link :href="route('tenant.invoices.index')" :active="request()->routeIs('tenant.invoices.*')">
+                    {{ __('Invoices') }}
+                </x-responsive-nav-link>
+                <x-responsive-nav-link :href="route('tenant.favorites.index')" :active="request()->routeIs('tenant.favorites.*')">
+                    {{ __('Favorites') }}
+                </x-responsive-nav-link>
+                <x-responsive-nav-link :href="route('tenant.maintenance-requests.index')" :active="request()->routeIs('tenant.maintenance-requests.*')">
+                    {{ __('Requests') }}
+                </x-responsive-nav-link>
+            @endif
+            @if (auth()->user()?->isOwner())
+                <x-responsive-nav-link :href="route('owner.buildings.index')" :active="request()->routeIs('owner.buildings.*') || request()->routeIs('owner.rooms.*')">
+                    {{ __('My Buildings') }}
+                </x-responsive-nav-link>
+                <x-responsive-nav-link :href="route('owner.bookings.index')" :active="request()->routeIs('owner.bookings.*')">
+                    {{ __('Bookings') }}
+                </x-responsive-nav-link>
+                <x-responsive-nav-link :href="route('owner.invoices.index')" :active="request()->routeIs('owner.invoices.*')">
+                    {{ __('Invoices') }}
+                </x-responsive-nav-link>
+                <x-responsive-nav-link :href="route('owner.maintenance-requests.index')" :active="request()->routeIs('owner.maintenance-requests.*')">
+                    {{ __('Maintenance') }}
+                </x-responsive-nav-link>
+            @endif
         </div>
 
         <!-- Responsive Settings Options -->
