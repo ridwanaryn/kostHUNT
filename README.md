@@ -1,4 +1,4 @@
-# NgeKost! (kostHUNT)
+# kostHUNT
 
 A modern boarding-house (kost) search and rental platform for students and young
 professionals. Search verified rooms, book instantly, track rent, renew or end your
